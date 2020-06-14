@@ -23,9 +23,9 @@ Almost all competitive programming problems have the same format, it will have t
 
 ### **Pair of Tens!**
 
-Time Limit: 1s
+**Time Limit**: 1s
 
-Memory Limit: 64MB
+**Memory Limit**: 64MB
 
 Given a list of n integer numbers, a_1, a_2, ..., a_n. Find the number of pairs in the list which adds up to 10
 
