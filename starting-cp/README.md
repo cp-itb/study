@@ -23,17 +23,17 @@ Almost all competitive programming problems have the same format, it will have t
 
 ### **Pair of Tens!**
 
-Time Limit: $1$s
+Time Limit: 1s
 
-Memory Limit: $64$MB
+Memory Limit: 64MB
 
-Given a list of $n$ integer numbers, $a_1, a_2, \dots, a_n$. Find the number of pairs in the list which adds up to $10$
+Given a list of n integer numbers, a_1, a_2, ..., a_n. Find the number of pairs in the list which adds up to 10
 
 **Input**
 
-The first line of input contains one integer $n$ ($2 \leq n \leq 10^3$), which is the number of integer in the list.
+The first line of input contains one integer n (2 <= n <= 1000), which is the number of integer in the list.
 
-The second line contains $n$ integers, the $i$-th of them is $a_i$ ($0 \leq a_i \leq 10$), which is the value of the $i$-th integer in the list.
+The second line contains n integers, the i-th of them is a_i (0 <= a_i <= 10), which is the value of the i-th integer in the list.
 
 **Output**
 
