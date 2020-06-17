@@ -124,7 +124,7 @@ int main() {
 }
 ```
 
-Notice that it will take n * (n + 1) / 2 operations, because the maximum n is 1000, and so we'll have approximately 500500 operations which will take comfortably under 1 second, and so this is a valid solution for the given constraints. However, this is actually not a good solution, and most competitive programming problems actually has a more tight constraint, in this case, what if n is bigger than 1000? say 1000000, then it will definitely consume a lot of operations and run time, and so it will take more than 1 second to finish.
+Notice that it will take n * (n - 1) / 2 operations, because the maximum n is 1000, and so we'll have approximately 499500 operations which will take comfortably under 1 second, and so this is a valid solution for the given constraints. However, this is actually not a good solution, and most competitive programming problems actually has a more tight constraint, in this case, what if n is bigger than 1000? say 1000000, then it will definitely consume a lot of operations and run time, and so it will take more than 1 second to finish.
 
 This is actually what makes competitive programming different, you have to not only make a program to solve the problem, but also to find a way to make the program run fast and efficient. Now, it is definitely good to learn this bruteforces techniques first to get you started, and so along the way, you will eventually gain more knowledge to solve problems more efficiently.
 
