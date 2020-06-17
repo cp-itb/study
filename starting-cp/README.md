@@ -2,6 +2,8 @@
 
 Ever wanted to try and compete on Competitive Programming (CP)? Is it hard for you to find a way on how to start? Don't worry! we'll guide you on how to start CP, starting from the basics, so let's get started!
 
+---
+
 # Table of Contents
 - [What is Competitive Programming?](#What-is-Competitive-Programming?)
 - [Problem Example](#Problem-Example)
@@ -174,7 +176,7 @@ When it comes to platforms in learning competitive programming, there are a lot 
 
 [AtCoder](https://atcoder.jp/) is a competitive programming platform from japan. It has one of the best problems including beginner problems, which could improve your CP skills. And I also recommend for you to participate in AtCoder Beginner Contest which is usually held almost every week there.
 
-### Hackerrank
+### HackerRank
 
 [HackerRank](https://www.hackerrank.com/) is actually more of a site to learn for interview questions, but it's also a good resource to learn competitive programming, especially for beginners. It has a lot of good problems and most importantly it has the solution for the problems, so you could learn better.
 
