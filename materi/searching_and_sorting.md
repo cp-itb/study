@@ -80,7 +80,7 @@ int main() {
 
 	sort(ar, ar + 5, custom_compare);
 	for (int i = 0; i < 5; i++){
-        cout << ar[i].first << " " << ar[i].second << '\n';
+		cout << ar[i].first << " " << ar[i].second << '\n';
 	}
 	/*
 	output:
@@ -93,10 +93,10 @@ int main() {
 	notice that we sort the element according to the second attribute
 	*/
 
-    // You can also do it like this
-    sort(ar, ar + 5, [&](auto a, auto b) {
-        return a.second < b.second;
-    });
+	// You can also do it like this
+	sort(ar, ar + 5, [&](auto a, auto b) {
+		return a.second < b.second;
+	});
 
 	return 0;
 }
@@ -111,8 +111,8 @@ The most naive searching algorithm is linear search. In this algorithm, you basi
 bool found = false;
 for (auto x : ar) {
 	if (x == k) {
-        found = true;
-        break;
+		found = true;
+		break;
 	}
 }
 ```
@@ -133,13 +133,13 @@ bool found = false;
 while (low <= high) {
 	int mid = (low + high) / 2;
 	if (ar[mid] >= k) {
-        high = mid - 1; // halve the searching area
-        if (ar[mid] == k) {
-            found = true;
-            break;
-        }
+		high = mid - 1; // halve the searching area
+		if (ar[mid] == k) {
+			found = true;
+			break;
+		}
 	} else {
-        low = mid + 1; // halve the searching area
+		low = mid + 1; // halve the searching area
 	}
 }
 ```
