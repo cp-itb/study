@@ -16,13 +16,13 @@ Ever wanted to try and compete on Competitive Programming (CP)? Is it hard for y
 
 ## What is Competitive Programming?
 
-Competitive Programming is a mind sport programming where participants are given a problem and have to solve the problem by making an efficient program under the given constraint. Usually, the program is made with programming languages such as C++, Java, or Python, but it depends on the contest and platform.
+Competitive Programming is a mind sport programming where participants are given a problem and have to solve the problem by making an efficient program under the given constraint. Usually, the program is made with programming languages such as C++, Java, or Python, but it depends on the contest and the platform used.
 
 ---
 
 ## Problem Example
 
-Almost all competitive programming problems have the same format, it will have the problem name, problem description, the constraint of the problem, format input and output examples, explanation (not always), and also the time and memory limit for the program solution. Here is the problem example:
+Almost all competitive programming problems have the same format, it will have the problem name, problem description, the constraint of the problem, input and output format, input and output examples with/without explanation, and also the time and memory limit for the program solution. Here is the problem example:
 
 ### **Pair of Tens!**
 
@@ -31,6 +31,8 @@ Almost all competitive programming problems have the same format, it will have t
 **Memory Limit**: 64MB
 
 Given a list of **n** integer numbers, **a_1, a_2, ..., a_n**. Find the number of pairs in the list which adds up to 10.
+
+Numbers **a_i** and **a_j** is a pair of number if and only if **i ≠ j**. Two pairs **(a_i, a_j)** and **(a_x, a_y)** is different if and only if ((**i ≠ x** or **j ≠ y**) and (**i ≠ y** or **j ≠ x**))
 
 **Input**
 
@@ -80,7 +82,7 @@ In order to start your competitive programming journey, you will need the right 
 
 ### IDE/Code Editor
 
-The first tool is the IDE/Code Editor, which is basically the environment you're going to use to program. There are tons of awesome IDEs, but I recommend using **Visual Studio Code**, because honestly it is one of the best IDE right now and almost everyone is using it. You could go install it [here](https://code.visualstudio.com/).
+The first tool is the IDE/code editor, which is basically the environment you're going to use to program. There are tons of awesome IDEs and code editors, but I recommend using **Visual Studio Code**, because it is one of the simplest and widely used code editor. You could go install it [here](https://code.visualstudio.com/).
 
 
 ### Programming Language
@@ -93,7 +95,9 @@ After you install those two tools, you could also install extensions on visual s
 
 ## Code Example
 
-Now let's begin to solve the previous given problem. If you are new to programming, don't worry, you only need to know the basics which is if-else statements, loops, and functions. One of the easiest solution for the problem is to choose two different elements (not necessarily different element value) in the list, and so we could use two for-loops and try every pair in the list. Here is the code written in C++:
+In this example we are going to solve the [problem example](#Problem-Example). Keep in mind that on the problem we have time limit constraint of 1 second, and to approximate whether the solution is acceptable or not we are going to use the rule of thumb that for every **10^8** operations, it will take about 1 second to run. **Remember that this is only a rule of thumb** so that it will be easier to tell whether your program is good enough or not.
+
+Now let's begin to solve the previous given problem. If you are new to programming, don't worry, you only need to know the basics which is IO, if-else statements, loops, and functions. One of the easiest solution for the problem is to choose two different elements (not necessarily different element value) in the list, and so we could use two for-loops and try every pair in the list. Here is the code written in C++:
 
 ```c++
 #include <iostream>
@@ -124,7 +128,7 @@ int main() {
 }
 ```
 
-Notice that it will take n * (n - 1) / 2 operations, because the maximum n is 1000, and so we'll have approximately 499500 operations which will take comfortably under 1 second, and so this is a valid solution for the given constraints. However, this is actually not a good solution, and most competitive programming problems actually has a more tight constraint, in this case, what if n is bigger than 1000? say 1000000, then it will definitely consume a lot of operations and run time, and so it will take more than 1 second to finish.
+Notice that it will take **n * (n - 1) / 2** operations, because the maximum n is 1000, and so we'll have approximately 499500 operations which will take comfortably under 1 second **(499500 <= 10^8)**, and so this is a valid solution for the given constraints. However, this is actually not a good solution, and most competitive programming problems actually has a more tight constraint, in this case, what if n is bigger than 1000? lets say 1000000, then it will definitely consume a lot more operations resulting in slower run time, which in this case it will take more than 1 second to finish.
 
 This is actually what makes competitive programming different, you have to not only make a program to solve the problem, but also to find a way to make the program run fast and efficient. Now, it is definitely good to learn this bruteforces techniques first to get you started, and so along the way, you will eventually gain more knowledge to solve problems more efficiently.
 
@@ -136,9 +140,11 @@ In comparison, this is one of the better solution, which is to use **hashmap**, 
 using namespace std;
 
 int main() {
+    // Ignore this block for now
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
+    //===========================
 
     int n;
     cin >> n;
@@ -147,7 +153,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
-        answer += mp[x - 10];
+        answer += mp[10 - x];
         mp[x]++;
     }
     cout << answer << '\n';
@@ -156,11 +162,21 @@ int main() {
 }
 ```
 
-Now if you don't understand the better solution yet, it's definitely ok, just keep in mind that by learning competitive programming, you will have the skills to make a great, fast and efficient program.
+Now if you don't understand the better solution yet, it's definitely ok, just keep in mind that by learning competitive programming, you will have the skills to make a great, fast, and efficient program.
+
+---
+
+## References to Learn C++
+
+These references can be treated as somekind of notebook/cheatsheet. You don't have to read all of the content, it is better to search/read something you need along the way while solving some problems.
+
+[This tutorial from NTU](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp1_Basics.html) is the one that we recommend, and there are some others documentation-like tutorial such as [cppreference ](https://en.cppreference.com/w/) and [cplusplus.com](https://www.cplusplus.com/doc/tutorial/).
 
 ---
 
 ## Platforms to Study Competitive Programming
+
+Note: Remember that these platforms are mainly for solving problems. You can learn faster by implementing your solution directly. Keep in mind that these are not the only available platforms out there.
 
 When it comes to platforms in learning competitive programming, there are a lot of good platforms. And so, I recommend these 4 platforms to start, which is [TLX](https://tlx.toki.id/), [CodeForces](https://codeforces.com/), [AtCoder](https://atcoder.jp/), and [HackerRank](https://www.hackerrank.com/).
 
