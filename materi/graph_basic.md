@@ -91,7 +91,7 @@ Depth-first search (DFS) is an algorithm for traversing or searching tree or gra
 We can implement this in C++ with an adjacency list, array of visited nodes, and a dfs method (or a `stack` data structure):
 
 ```c++
-bool vis[N]; // set automatically in false if declared in global
+bool vis[N]; // set automatically to false if declared globally
 
 void dfs(int u) {
     vis[u] = 1; // marks as visited

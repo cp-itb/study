@@ -61,7 +61,7 @@ Statement: Given 2 strings $S$ and $T$, find the longest common subsequence of t
 
 A subsequence is a sequence that can be constructed by taking elements from the original sequence without changing the order.
 
-*For Example*, Given string $S = "\text{ABCDE}"$, strings “$\text{CE}$”, “$\text{ABD}$”, “$\text{BC}$” is a subsequence of string $S$, While strings “$\text{ADB}$”, “\text{CB}”, “\text{EA}” is not.
+*For Example*, Given string $S = "\text{ABCDE}"$, strings “$\text{CE}$”, “$\text{ABD}$”, “$\text{BC}$” is a subsequence of string $S$, While strings “$\text{ADB}$”, “$\text{CB}$”, “$\text{EA}$” is not.
 
 #### Top-down implementation
 

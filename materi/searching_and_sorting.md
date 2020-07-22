@@ -39,8 +39,6 @@ for (int i = 0; i < 4; i++) cout << ar[i] << “ “; // output is “5 1 3 100�
 
 #### sorting to a non-increasing order
 
-Example:
-
 ```c++
 int ar[4] = {5, 3, 100, 1};
 sort(ar + 1, ar + 4, greater<int>());
@@ -53,8 +51,6 @@ for (int i= 0 ; i < 5; i++) cout << ar2[i] << “ “; // output is “100 10 5 
 ```
 
 #### sorting with a custom comparison
-
-*Example*
 
 ```c++
 #include <bits/stdc++.h>
@@ -158,7 +154,7 @@ One such example is for searching a square root of a number:
 const double eps = 1e-9;
 
 double l = 0, r = n, res = -1;
-while (r - l > e) {
+while (r - l > eps) {
     double mid = (l + r) / 2.0;
     if (mid * mid <= n) {
         l = mid;

@@ -30,4 +30,4 @@ A simple application of prefix sum is for finding a sum of element inside a rang
 
 More formally, to find the sum of elements in range $[L, R]$ you can compute it with `pre[R] - pre[L - 1]`.
 
-Another application of prefix sum is for finding a maximum sum of a subarray.
+Another application of prefix sum is for finding a maximum sum of a subarray, but will not be further discussed here.
