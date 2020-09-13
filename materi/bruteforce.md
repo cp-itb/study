@@ -50,6 +50,8 @@ for (int mask = 0; mask < (1 << n); mask++) {
 }
 ```
 
+This is related to bit operations. You can search on google if you want to know how this works.
+
 ### Enumerating All Subset of Size K
 
 If you want to find all subset having sized K, you can do it with this magic trick:
@@ -66,5 +68,3 @@ do {
     }
 } while (next_permutation(v.begin(), v.end()));
 ```
-
-This is related to bit operations. You can search on google if you want to know how this works.
