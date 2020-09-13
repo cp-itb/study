@@ -50,4 +50,21 @@ for (int mask = 0; mask < (1 << n); mask++) {
 }
 ```
 
+### Enumerating All Subset of Size K
+
+If you want to find all subset having sized K, you can do it with this magic trick:
+
+```c++
+vector<int> v(n, 1);
+for (int i = 0; i < k; i++) {
+    v[i] = 0;
+}
+do {
+    for (int i = 0; i < n; i++) {
+        if (v[i] == 1) continue;
+        // do stuff with it's element
+    }
+} while (next_permutation(v.begin(), v.end()));
+```
+
 This is related to bit operations. You can search on google if you want to know how this works.
