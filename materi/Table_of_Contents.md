@@ -10,4 +10,4 @@
 8. [Greedy](https://github.com/cp-itb/study/blob/master/materi/greedy.md)
 9. [Dynamic Programming](https://github.com/cp-itb/study/blob/master/materi/dynamic_programming.md)
 10. [Graph basics](https://github.com/cp-itb/study/blob/master/materi/graph_basic.md)
-11. [Fast exponentiation, Modulo + Inverse Modulo](https://github.com/cp-itb/study/blob/master/materi/fastexpo_modulo.md)
+11. [Fast exponentiation, Modulo + Inverse Modulo, C(N, K) % P](https://github.com/cp-itb/study/blob/master/materi/fastexpo_modulo_comb.md)

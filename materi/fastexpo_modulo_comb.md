@@ -58,3 +58,47 @@ res = ((a % p) * (b % p)) % p; // a safer approach
 ## Inverse Modulo
 
 Inverse modulo is useful to handle modulo when there are divisions in place. You can see the full explanation [here](https://cp-algorithms.com/algebra/module-inverse.html).
+
+## Computing C(N, K) % P
+
+To compute C(N, K) % P, you need to precompute factorials and inverse modulo factorials, and then just use the formula C(N, K) = n! / (k! (n - k)!). Here is the example:
+
+```c++
+const int N = 2e5 + 5; // or some other constant
+const int M = 1e9 + 7; // or some other constant "prime"
+
+int n, k;
+long long fact[N], invf[N];
+
+long long modpow(long long x, long long y) {
+    long long ret = 1;
+    while (y > 0) {
+        if (y & 1) ret = (ret * x) % M;
+        y >>= 1;
+        x = (x * x) % M;
+    }
+    return ret;
+}
+
+long long C(int a, int b) {
+    if (a < b) return 0;
+    long long ret = (fact[a] * invf[a - b]) % M;
+    ret = (ret * invf[b]) % M;
+    return ret;
+}
+
+void preprocess() {
+    fact[0] = invf[0] = 1;
+    for (int i = 1; i < N; i++) {
+        fact[i] = (fact[i - 1] * i) % M;
+        invf[i] = modpow(fact[i], M - 2);
+    }
+}
+
+int main() {
+    preprocess();
+    cin >> N >> K;
+    cout << C(N, K) << '\n';
+    return 0;
+}
+```
