@@ -63,7 +63,7 @@ for (int i = 0; i < k; i++) {
 }
 do {
     for (int i = 0; i < n; i++) {
-        if (v[i] == 1) continue;
+        if (v[i] == 0) continue;
         // do stuff with it's element
     }
 } while (next_permutation(v.begin(), v.end()));
