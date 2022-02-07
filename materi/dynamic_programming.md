@@ -84,9 +84,9 @@ int LCS(int i, int j) {
 	if (i == -1 || j == -1) return 0;
 	if (dp[i][j] != -1) return dp[i][j];
 	if (s[i] == t[j]) {
-    	dp[i][j] = max(dp[i][j], dp[i - 1][j - 1] + 1);
+    	   dp[i][j] = max(dp[i][j], LCS(i - 1, j - 1) + 1);
 	}
-	dp[i][j] = max(dp[i][j], max(dp[i - 1][j], dp[i][j - 1]));
+	dp[i][j] = max(dp[i][j], max(LCS(i - 1, j), LCS(i, j - 1)));
 	return dp[i][j];
 }
 ```
