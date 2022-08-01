@@ -22,13 +22,13 @@ Given a list of $N$ integer numbers, $A_1, A_2, ..., A_N$. Find the number of pa
 
 Numbers $A_i$ and $A_j$ is a pair of number if and only if $i \neq j$.
 
-Two pairs $(A_i, A_j)$ and $(A_x, A_y)$ is different if and only if (($i \neq x$ or $j \neq y$) and ($i \neq y$ or $j \neq x$))
+Two pairs $(A_i, A_j)$ and $(A_x, A_y)$ is different if and only if $((i \neq x$ or $j \neq y)$ and $(i \neq y$ or $j \neq x))$
 
 **Input**
 
-The first line of input contains one integer $N$ ($2 \leq N \leq 1000$), which is the number of integer in the list.
+The first line of input contains one integer $N$ $(2 \leq N \leq 1000)$, which is the number of integer in the list.
 
-The second line contains $N$ integers, the $i$-th of them is $A_i$ ($0 \leq A_i \leq 10$), which is the value of the $i$-th integer in the list.
+The second line contains $N$ integers, the $i$-th of them is $A_i$ $(0 \leq A_i \leq 10)$, which is the value of the $i$-th integer in the list.
 
 **Output**
 
