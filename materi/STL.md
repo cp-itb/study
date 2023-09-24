@@ -80,14 +80,14 @@ s.erase(x); // erase the value x in s if there is any
 // note that this set is ordered by the smaller value (default)
 // you can change it to larger value with set<int, greater<int>>
 
-unoredered_set<int> us;
+unordered_set<int> us;
 us.insert(5);
 us.insert(2);
 us.insert(5);
 us.insert(1);
 // output it's size : 3
 cout << us.size() << '\n';
-// unoredered_set cannot be iterated like set
+// unordered_set cannot be iterated like set
 
 multiset<int> ms;
 ms.insert(5);
